@@ -10,11 +10,16 @@
 
 [AWS][1] 
 
+**Direct Connect Site Link**
 
+> SiteLink, a new feature of AWS Direct Connect (DX), makes it easy to send data from one Direct Connect location to another, bypassing AWS Regions. If you recall, Direct Connect is a cloud service that links your network to AWS, bypassing the internet to deliver more consistent, lower-latency performance. Prior to SiteLink, it was not possible to route traffic directly between Direct Connect locations. Now, you can create global, reliable, and pay-as-you-go connections between the offices and data centers in your global network by sending data over the fastest path between AWS Direct Connect locations.
+
+[AWS][2]
 
 ## AWS VPN
 
 **AWS VPN**: Connect your on prem services to the AWS cloud using and encryted link (Virtual Private Network)
 
 
-[1]: <https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html> "source"
+[1]: <https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html> "AWS MACSec"
+[2]: <https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-direct-connect-sitelink/> "AWS Site Link"
