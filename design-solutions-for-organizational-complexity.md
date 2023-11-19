@@ -8,7 +8,7 @@
 
 > MAC Security (MACsec) is an IEEE standard that provides data confidentiality, data integrity, and data origin authenticity. You can use AWS Direct Connect connections that support MACsec to encrypt your data from your corporate data center to the AWS Direct Connect location. All data flowing across the AWS global network that interconnects with datacenters and Regions is automatically encrypted at the physical layer before it leaves the data center.
 
-[AWS][1] 
+[AWS Docs][1] 
 
 **Direct Connect Site Link**
 
@@ -16,7 +16,7 @@ Connect two of your sites via AWS Direct Connect so your service can communicate
 
 > SiteLink, a new feature of AWS Direct Connect (DX), makes it easy to send data from one Direct Connect location to another, bypassing AWS Regions. If you recall, Direct Connect is a cloud service that links your network to AWS, bypassing the internet to deliver more consistent, lower-latency performance. Prior to SiteLink, it was not possible to route traffic directly between Direct Connect locations. Now, you can create global, reliable, and pay-as-you-go connections between the offices and data centers in your global network by sending data over the fastest path between AWS Direct Connect locations.
 
-[AWS][2]
+[AWS Docs][2]
 
 ## AWS VPN
 
@@ -25,7 +25,7 @@ Connect two of your sites via AWS Direct Connect so your service can communicate
 AWS site-to-site VPN a secure connection between data centers, offices and AWS resources. 
 AWS Accelarate site-to-site VPN adds in global accelarator.
 
-[AWS][3]
+[AWS Docs][3]
 
 ## Transitive Routing
 
@@ -41,6 +41,28 @@ Different stratergy for conneting VPCs
 
 ![Transit Gateway](images/TransitGateway.png)
 
+**Transitive VPC**: Use a VPC as a hub that sits in the middle of the VPC's
+
+> Transit VPCs can solve some of the shortcomings of VPC peering by introducing a hub and spoke design for inter-VPC connectivity. In a transit VPC network, one central VPC (the hub VPC) connects with every other VPC (spoke VPC) through a VPN connection typically leveraging BGP over IPsec. The central VPC contains Amazon Elastic Compute Cloud (Amazon EC2) instances running software appliances that route incoming traffic to their destinations using the VPN overlay.
+
+![Transitive VPC](images/TransitiveVPC.png)
+
+[AWS Docs][4]
+
+## AWS ECS Serivce Connect
+
+> Amazon ECS Service Connect provides management of service-to-service communication as Amazon ECS configuration.
+
+Using AWS Cloud Map, namespaces and local service names. ECS can be configured for seemles distrabuted traffic between ECS tasks witout needing load balencers.
+
+> The Service Connect feature creates a virtual network of related services. The same service configuration can be used across multiple different namespaces to run independent yet identical sets of applications. 
+
+> Windows containers aren't supported with Service Connect.
+
+[AWS Docs][5]
+
 [1]: <https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html> "AWS MACSec"
 [2]: <https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-direct-connect-sitelink/> "AWS Site Link"
 [3]: <https://aws.amazon.com/vpn/> "AWS VPN"
+[4]: <https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-vpc-solution.html> "Transit VPC"
+[5]: <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html> "AWS ECS Service Connect"
