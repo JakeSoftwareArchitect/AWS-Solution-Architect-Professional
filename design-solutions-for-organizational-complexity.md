@@ -1,8 +1,8 @@
-# AWS Architecture Connectivity Stratergies
+# AWS Architecture Connectivity Strategies
 
 ## AWS Direct Connect
 
-**AWS Direct Connect**: Allow you to connect you on-prem services to AWS directly (not via internet). This can be achieved by using one of the pre-approved data centers. It's the fastet way to connect you serveces to thoses in the AWS cloud. Allows connection to different Avalability Zones, without going via the web.
+**AWS Direct Connect**: Allow you to connect you on-prem services to AWS directly (not via internet). This can be achieved by using one of the pre-approved data centers. It's the fastest way to connect you services to those in the AWS cloud. Allows connection to different Availability Zones, without going via the web.
 
 **MAC Security**: 
 
@@ -12,7 +12,7 @@
 
 **Direct Connect Site Link**
 
-Connect two of your sites via AWS Direct Connect so your service can communicate withought communication over the internet.
+Connect two of your sites via AWS Direct Connect so your service can communicate without communication over the internet.
 
 > SiteLink, a new feature of AWS Direct Connect (DX), makes it easy to send data from one Direct Connect location to another, bypassing AWS Regions. If you recall, Direct Connect is a cloud service that links your network to AWS, bypassing the internet to deliver more consistent, lower-latency performance. Prior to SiteLink, it was not possible to route traffic directly between Direct Connect locations. Now, you can create global, reliable, and pay-as-you-go connections between the offices and data centers in your global network by sending data over the fastest path between AWS Direct Connect locations.
 
@@ -20,16 +20,16 @@ Connect two of your sites via AWS Direct Connect so your service can communicate
 
 ## AWS VPN
 
-**AWS Client VPN**: Connect your on prem services to the AWS cloud using and encryted link (Virtual Private Network), fully managed and elastic, scales with use.
+**AWS Client VPN**: Connect your on prem services to the AWS cloud using and encrypted link (Virtual Private Network), fully managed and elastic, scales with use.
 
 AWS site-to-site VPN a secure connection between data centers, offices and AWS resources. 
-AWS Accelarate site-to-site VPN adds in global accelarator.
+AWS Accelerated site-to-site VPN adds in global accelerator.
 
 [AWS Docs][3]
 
 ## Transitive Routing
 
-Different stratergy for conneting VPCs
+Different strategy for connecting VPCs
 
 **VPC Peering**: A VPC peer connection enables bi-directional traffic from 2 VPC even if in different subscriptions of Zones. Note you can't chain VPCs using peering to create a pathway through multiple VPCs
 ![VPC Peering](images/VPCPeering.png)
@@ -49,11 +49,11 @@ Different stratergy for conneting VPCs
 
 [AWS Docs][4]
 
-## AWS ECS Serivce Connect
+## AWS ECS Service Connect
 
 > Amazon ECS Service Connect provides management of service-to-service communication as Amazon ECS configuration.
 
-Using AWS Cloud Map, namespaces and local service names. ECS can be configured for seemles distrabuted traffic between ECS tasks witout needing load balencers.
+Using AWS Cloud Map, namespaces and local service names. ECS can be configured for seamless distributed traffic between ECS tasks without needing load balancers.
 
 > The Service Connect feature creates a virtual network of related services. The same service configuration can be used across multiple different namespaces to run independent yet identical sets of applications. 
 
