@@ -6,3 +6,4 @@ Study notes for the AWS Solution Architect Certification. These notes are ordere
 
 [Design Solutions for Organizational Complexity](design-solutions-for-organizational-complexity.md)
 [Prescribe Security Controls](prescribe-security-controls.md)
+

@@ -17,4 +17,19 @@ Allows an external sign-on provider to authenticate users into AWS deployed apps
 - OIDC
 - Keberos
 
+## Route Tables, Security Groups and Network ACLs
+
+(See for initial mention of Security Groups and Network ACSs [design-solutions-for-organizational-complexity](design-solutions-for-organizational-complexity.md)
+
+### Route Tables
+
+> Each subnet in your VPC must be associated with a route table. A subnet can be explicitly associated with custom route table, or implicitly or explicitly associated with the main route table.
+
+![Route Table Concepts](images/RouteTableConcepts.png)
+
+![Route Table Example](images/RouteTableExample.png)
+
+[AWS Docs][1]
+
+[1]: <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html> "Route Tables"
 
