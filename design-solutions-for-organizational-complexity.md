@@ -94,6 +94,42 @@ Subnets can be IPv4 IPv6 or "Dual Stack" -- both IPv4 and IPv6. These are manage
 
 [AWS Docs][7]
 
+## Network Traffic Monitoring
+
+### Flow Logs
+
+> You can create a flow log for a VPC, a subnet, or a network interface. If you create a flow log for a subnet or VPC, each network interface in that subnet or VPC is monitored. 
+
+![FlowLog](images/FlowLogSubnet.png)
+
+[AWS Docs][8]
+ 
+### IPAM
+
+> Amazon VPC IP Address Manager (IPAM) is a VPC feature that makes it easier for you to plan, track, and monitor IP addresses for your AWS workloads. You can use IPAM automated workflows to more efficiently manage IP addresses.
+
+[AWS Docs][9]
+
+### Traffic Mirroring
+
+> Traffic Mirroring is an Amazon VPC feature that you can use to copy network traffic from an elastic network interface of type interface. You can then send the traffic to out-of-band security and monitoring appliances.
+
+Duplicate the traffic from a VPC interface and send it to an analysis tool.
+
+### Reachability Analyzer
+
+> Reachability Analyzer is a configuration analysis tool that enables you to perform connectivity testing between a source resource and a destination resource in your virtual private clouds (VPCs). When the destination is reachable, Reachability Analyzer produces hop-by-hop details of the virtual network path between the source and the destination. When the destination is not reachable, Reachability Analyzer identifies the blocking component. For example, paths can be blocked by configuration issues in a security group, network ACL, route table, or load balancer.
+
+### Network Access Analyzer
+
+- Understand, verify, and improve your network security posture – Network Access Analyzer helps you identify unintended network access relative to your security and compliance requirements, enabling you to take steps to improve your network security.
+- Demonstrate compliance – Network Access Analyzer helps you demonstrate that your network on AWS meets your compliance requirements.
+
+### CloudTrail
+
+> You can use AWS CloudTrail to capture detailed information about the calls made to the Amazon VPC API. You can use the generated CloudTrail logs to determine which calls were made, the source IP address where the call came from, who made the call, when the call was made, and so on. 
+
+Captures the event history, and store for 90 days be default. For longer persistence and more advanced analysis see [AWS CloudTrail Lake](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-lake.html)
 
 [1]: <https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html> "AWS MACSec"
 [2]: <https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-direct-connect-sitelink/> "AWS Site Link"
@@ -102,3 +138,5 @@ Subnets can be IPv4 IPv6 or "Dual Stack" -- both IPv4 and IPv6. These are manage
 [5]: <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html> "AWS ECS Service Connect"
 [6]: <https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-dns-resolution-for-hybrid-networks-in-a-multi-account-aws-environment.html> "Hybrid DNS"
 [7]: <https://docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-amazon-eks/network-segmentation-and-hardening.html> "Subnet Security"
+[8]: <https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html#flow-log-records> "Flow Logs"
+[9]: <https://docs.aws.amazon.com/vpc/latest/ipam/what-it-is-ipam.html> "IPAM"
