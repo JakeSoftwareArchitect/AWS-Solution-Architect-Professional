@@ -61,8 +61,20 @@ Using AWS Cloud Map, namespaces and local service names. ECS can be configured f
 
 [AWS Docs][5]
 
+## Hybrid DNS Concepts
+
+**Route 53 Resolver** allows seamless DNS resolution across both your private network and AWS Cloud.
+
+> Hybrid cloud is a combination of AWS Cloud and on prem servers.
+
+![Hybrid DNS](images/HybridDNS.png)
+
+[AWS Docs][6]
+
+
 [1]: <https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html> "AWS MACSec"
 [2]: <https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-direct-connect-sitelink/> "AWS Site Link"
 [3]: <https://aws.amazon.com/vpn/> "AWS VPN"
 [4]: <https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-vpc-solution.html> "Transit VPC"
 [5]: <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html> "AWS ECS Service Connect"
+[6]: <https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-dns-resolution-for-hybrid-networks-in-a-multi-account-aws-environment.html> "Hybrid DNS"
