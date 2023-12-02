@@ -71,6 +71,29 @@ Using AWS Cloud Map, namespaces and local service names. ECS can be configured f
 
 [AWS Docs][6]
 
+## Network Segmentation
+
+**Subnetting** 
+
+> Each subnet must reside entirely within one Availability Zone and cannot span zones. By launching AWS resources in separate Availability Zones, you can protect your applications from the failure of a single Availability Zone.
+
+Subnets can be IPv4 IPv6 or "Dual Stack" -- both IPv4 and IPv6. These are managed by a CIDR block. IPv4 subnets cant communicate over IPv6 and vise versa.
+
+### Subnet Security
+
+* Security Groups: Operate at an instance level
+	* Supports allow rules only
+> Security groups allow inbound and outbound traffic for associated resources, such as EC2 instances. 
+
+* Network ACL (Access Control List): Operate at a subnet level
+	* Supports allow and deny rules 
+
+> Network ACLs allow or deny inbound and outbound traffic at the subnet level. In most cases, security groups can meet your needs. However, you can use network ACLs if you want an additional layer of security.
+
+![Subnetting](images/Subnetting.png)
+
+[AWS Docs][7]
+
 
 [1]: <https://docs.aws.amazon.com/directconnect/latest/UserGuide/MACsec.html> "AWS MACSec"
 [2]: <https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-direct-connect-sitelink/> "AWS Site Link"
@@ -78,3 +101,4 @@ Using AWS Cloud Map, namespaces and local service names. ECS can be configured f
 [4]: <https://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/transit-vpc-solution.html> "Transit VPC"
 [5]: <https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-connect.html> "AWS ECS Service Connect"
 [6]: <https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/set-up-dns-resolution-for-hybrid-networks-in-a-multi-account-aws-environment.html> "Hybrid DNS"
+[7]: <https://docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-amazon-eks/network-segmentation-and-hardening.html> "Subnet Security"
