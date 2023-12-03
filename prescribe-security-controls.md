@@ -31,5 +31,22 @@ Allows an external sign-on provider to authenticate users into AWS deployed apps
 
 [AWS Docs][1]
 
-[1]: <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html> "Route Tables"
+## Encryption keys and certificate management
 
+### AWS Key Management Service [KMS]
+
+> AWS Key Management Service (AWS KMS) is a managed service that makes it easy for you to create and control the cryptographic keys that are used to protect your data. AWS KMS uses hardware security modules (HSM) to protect and validate your AWS KMS keys under the FIPS 140-2 Cryptographic Module Validation Program. China (Beijing) and China (Ningxia) Regions do not support the FIPS 140-2 Cryptographic Module Validation Program. AWS KMS uses OSCCA certified HSMs to protect KMS keys in China Regions.
+
+[AWS Docs][2]
+
+### Certificate Manager [ACM]
+
+> Use AWS Certificate Manager (ACM) to provision, manage, and deploy public and private SSL/TLS certificates for use with AWS services and your internal connected resources. ACM removes the time-consuming manual process of purchasing, uploading, and renewing SSL/TLS certificates.
+
+[AWS Docs][3]
+
+
+
+[1]: <https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Route_Tables.html> "Route Tables"
+[2]: <https://docs.aws.amazon.com/kms/latest/developerguide/overview.html? "Key Management Service"
+[3]: <https://aws.amazon.com/certificate-manager/> "Certificate Manger"
